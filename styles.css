@@ -445,9 +445,9 @@
 }
 
 /* Desktop Only CSS */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
     .header {
-        padding: 2.5rem 3.25rem;
+        padding: 2.5rem 7rem;
         align-items: center;
     }
 
@@ -466,10 +466,6 @@
         padding-right: 1rem;
     }
 
-    .header .call-button {
-        margin-right: 2.5rem;
-    }
-
     .header .call-button button {
         background: var(--gradient-1);
         border-radius: 15px;
@@ -484,8 +480,48 @@
     }
 
     .first-vector img {
-        width: 47rem;
-        height: 47rem;
+        width: 52rem;
+        height: 52rem;
+    }
+
+    .section-1 {
+        padding: 3rem 7rem;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .section-1 .title {
+        font-size: 2.5rem;
+        width: 18rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .section-1 .sub-title {
+        font-size: 1.25rem;
+        width: 20rem;
+        margin-bottom: 1.875rem;
+    }
+
+    .section-1 .call-button button {
+        font-size: 1.125rem;
+        padding: 0.5rem 2.5rem;
+        width: auto;
+    }
+
+    .section-1 .forklift-image img {
+        width: 598px;
+        height: 461px;
+    }
+
+    .section-1 .worker-image {
+        flex-basis: 100%;
+    }
+
+    .section-1 .worker-image img {
+        width: 307px;
+        height: 237px;
+        margin-left: 9.5rem;
     }
 }
 
@@ -502,7 +538,7 @@
 }
 
 .font-500 {
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .font-size-20 {
@@ -569,13 +605,13 @@
     color: var(--white-2);
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
     .d-none {
         display: none;
     }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 991px) {
     .d-m-none {
         display: none;
     }
