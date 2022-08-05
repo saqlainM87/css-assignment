@@ -4,9 +4,22 @@
     --black-2: #4b4646;
     --blue-1: #0044c4;
     --white-1: #f2f2f2;
+    --white-2: #fff;
+    --gradient-1: linear-gradient(
+        90deg,
+        var(--blue-1) -47.89%,
+        #d14a27 70.49%,
+        #ffdec6 184.04%
+    );
+    --gradient-2: linear-gradient(
+        90.09deg,
+        var(--blue-1) -37.1%,
+        #ff8464 127.64%,
+        #ffc397 236.7%
+    );
 }
 
-/* Main CSS */
+/* Mobile/Common CSS */
 .container {
     position: relative;
     width: 100vw;
@@ -18,6 +31,11 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+}
+
+.header .icon img {
+    width: 2.75rem;
+    height: 2rem;
 }
 
 .hamburger-button {
@@ -39,7 +57,7 @@
 
 .second-vector {
     position: absolute;
-    left: 285px;
+    right: -175px;
     top: 765px;
     z-index: -100;
     transform: rotate(-5deg);
@@ -72,7 +90,7 @@
 }
 
 .section-1 .title {
-    color: #fff;
+    color: var(--white-2);
     font-size: 1.25rem;
     width: 12.5rem;
 }
@@ -91,12 +109,7 @@
     font-size: 0.9375rem;
     font-weight: 700;
     position: relative;
-    background: linear-gradient(
-        90.09deg,
-        var(--blue-1) -37.1%,
-        #ff8464 127.64%,
-        #ffc397 236.7%
-    );
+    background: var(--gradient-2);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -109,12 +122,12 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #ffffff;
+    background-color: var(--white-2);
     z-index: -1;
 }
 
 .section-1 .title {
-    color: #fff;
+    color: var(--white-2);
     font-size: 1.25rem;
     width: 12.5rem;
     margin-top: 1.5rem;
@@ -190,14 +203,9 @@
 }
 
 .section-3 .call-button button {
-    background: linear-gradient(
-        90deg,
-        var(--blue-1) -47.89%,
-        #d14a27 70.49%,
-        #ffdec6 184.04%
-    );
+    background: var(--gradient-1);
     border: none;
-    color: #ffffff;
+    color: var(--white-2);
     border-radius: 15px;
     padding: 0.75rem 1.75rem;
     position: absolute;
@@ -218,7 +226,7 @@
 
 .section-5 .address-block {
     padding: 1.875rem 2rem;
-    background: #ffffff;
+    background: var(--white-2);
     border: 2px solid var(--blue-1);
     border-radius: 15px;
 }
@@ -281,7 +289,7 @@
 }
 
 .section-5 .input-group input {
-    background: #ffffff;
+    background: var(--white-2);
     border: 1px solid var(--blue-1);
     border-radius: 15px;
     width: 88%;
@@ -294,15 +302,10 @@
 }
 
 .section-5 .call-button button {
-    background: linear-gradient(
-        90deg,
-        var(--blue-1) -47.89%,
-        #d14a27 70.49%,
-        #ffdec6 184.04%
-    );
+    background: var(--gradient-1);
     border-radius: 15px;
     border: none;
-    color: #ffffff;
+    color: var(--white-2);
     padding: 0.75rem 1.75rem;
 }
 
@@ -328,10 +331,9 @@
 
 /* Slider CSS */
 .slider {
-    width: 300px;
+    width: 100%;
     text-align: center;
     overflow: hidden;
-    padding-left: 0.8rem;
 }
 
 .slides {
@@ -348,12 +350,7 @@
     height: 5px;
 }
 .slides::-webkit-scrollbar-thumb {
-    background: linear-gradient(
-        90deg,
-        var(--blue-1) -47.89%,
-        #d14a27 70.49%,
-        #ffdec6 184.04%
-    );
+    background: var(--gradient-1);
     border-radius: 10px;
 }
 .slides::-webkit-scrollbar-track {
@@ -447,6 +444,51 @@
     background: #000;
 }
 
+/* Desktop Only CSS */
+@media only screen and (min-width: 768px) {
+    .header {
+        padding: 2.5rem 3.25rem;
+        align-items: center;
+    }
+
+    .header .icon img {
+        width: 6.5625rem;
+        height: 4.75rem;
+    }
+
+    .header .nav-menus {
+        margin-left: 3rem;
+        flex-grow: 1;
+    }
+
+    .header .nav-menus a {
+        text-decoration: none;
+        padding-right: 1rem;
+    }
+
+    .header .call-button {
+        margin-right: 2.5rem;
+    }
+
+    .header .call-button button {
+        background: var(--gradient-1);
+        border-radius: 15px;
+        border: none;
+        color: var(--white-2);
+        padding: 0.5rem 2.5rem;
+    }
+
+    .first-vector {
+        left: 0;
+        top: 0;
+    }
+
+    .first-vector img {
+        width: 47rem;
+        height: 47rem;
+    }
+}
+
 /* Don't need button navigation */
 @supports (scroll-snap-type) {
     .slider > a {
@@ -469,6 +511,10 @@
 
 .font-size-18 {
     font-size: 1.125rem;
+}
+
+.font-size-19 {
+    font-size: 1.1875rem;
 }
 
 .font-size-15 {
@@ -517,6 +563,22 @@
 
 .color-blue-1 {
     color: var(--blue-1);
+}
+
+.color-white-2 {
+    color: var(--white-2);
+}
+
+@media only screen and (min-width: 768px) {
+    .d-none {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .d-m-none {
+        display: none;
+    }
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
