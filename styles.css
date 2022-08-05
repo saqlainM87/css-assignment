@@ -1,3 +1,11 @@
+/* Variables */
+:root {
+    --black-1: #2d3036;
+    --black-2: #4b4646;
+    --blue-1: #0044c4;
+}
+
+/* Main CSS */
 .container {
     position: relative;
     width: 100vw;
@@ -43,7 +51,7 @@
 
 .third-vector {
     position: absolute;
-    left: -80px;
+    left: -85px;
     top: 2710px;
     z-index: -100;
 }
@@ -56,7 +64,8 @@
 .section-1,
 .section-2,
 .section-3,
-.section-4 {
+.section-4,
+.section-5 {
     background-color: transparent;
     padding: 2rem 1rem;
 }
@@ -83,7 +92,7 @@
     position: relative;
     background: linear-gradient(
         90.09deg,
-        #0044c4 -37.1%,
+        var(--blue-1) -37.1%,
         #ff8464 127.64%,
         #ffc397 236.7%
     );
@@ -124,7 +133,7 @@
 }
 
 .section-2 .title {
-    color: #2d3036;
+    color: var(--black-1);
     font-size: 1.25rem;
     width: 12.5rem;
     margin-bottom: 2.25rem;
@@ -151,7 +160,7 @@
     margin-left: 1rem;
     font-size: 0.9375rem;
     padding-right: 1.5rem;
-    color: #4b4646;
+    color: var(--black-2);
 }
 
 .section-3 .service-offered {
@@ -167,13 +176,13 @@
 }
 
 .section-3 .service-name {
-    color: #2d3036;
+    color: var(--black-1);
     font-size: 1.125rem;
     margin-bottom: 1.5rem;
 }
 
 .section-3 .service-info {
-    color: #4b4646;
+    color: var(--black-2);
     font-size: 0.9375rem;
     line-height: 28px;
 }
@@ -181,7 +190,7 @@
 .section-3 .call-button button {
     background: linear-gradient(
         90deg,
-        #0044c4 -47.89%,
+        var(--blue-1) -47.89%,
         #d14a27 70.49%,
         #ffdec6 184.04%
     );
@@ -200,11 +209,102 @@
 }
 
 .section-4 .photo-gallery-heading {
-    margin: 5rem 0;
-    color: #2d3036;
+    margin: 6rem 0 3rem 0;
+    color: var(--black-1);
     font-size: 1.4375rem;
 }
 
+.section-5 .address-block {
+    padding: 1.875rem 2rem;
+    background: #ffffff;
+    border: 2px solid var(--blue-1);
+    border-radius: 15px;
+}
+
+.section-5 .address-block .title {
+    margin-top: 0;
+}
+
+.section-5 .address {
+    margin-top: 6rem;
+}
+
+.section-5 .address p {
+    font-size: 1.25rem;
+    line-height: 24px;
+    display: inline;
+}
+
+.section-5 .address .street {
+    padding-left: 1rem;
+}
+
+.section-5 .map,
+.section-5 .contact-info {
+    margin-top: 1rem;
+    padding: 0;
+}
+
+.section-5 .map img {
+    width: 100%;
+}
+
+.section-5 .contact-info {
+    padding: 3rem 1rem;
+}
+
+.section-5 .contact-info p {
+    display: inline;
+}
+
+.section-5 .description {
+    width: 12.5rem;
+}
+
+.section-5 .contact-form {
+    margin-top: 3rem;
+    width: 100%;
+}
+
+.section-5 .input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 1.375rem;
+}
+
+.section-5 .input-group label {
+    margin-bottom: 0.5rem;
+}
+
+.section-5 .input-group input {
+    background: #ffffff;
+    border: 1px solid var(--blue-1);
+    border-radius: 15px;
+    width: 88%;
+    height: 3.375rem;
+    padding: 0 1rem;
+}
+
+.section-5 .call-button {
+    margin-top: 2.5rem;
+}
+
+.section-5 .call-button button {
+    background: linear-gradient(
+        90deg,
+        var(--blue-1) -47.89%,
+        #d14a27 70.49%,
+        #ffdec6 184.04%
+    );
+    border-radius: 15px;
+    border: none;
+    color: #ffffff;
+    padding: 0.75rem 1.75rem;
+}
+
+/* Slider CSS */
 .slider {
     width: 300px;
     text-align: center;
@@ -222,11 +322,16 @@
     -webkit-overflow-scrolling: touch;
 }
 .slides::-webkit-scrollbar {
-    width: 10px;
-    height: 10px;
+    width: 5px;
+    height: 5px;
 }
 .slides::-webkit-scrollbar-thumb {
-    background: black;
+    background: linear-gradient(
+        90deg,
+        var(--blue-1) -47.89%,
+        #d14a27 70.49%,
+        #ffdec6 184.04%
+    );
     border-radius: 10px;
 }
 .slides::-webkit-scrollbar-track {
@@ -267,6 +372,11 @@
     justify-content: center;
     align-items: center;
     font-size: 100px;
+}
+
+.slides .slide img,
+.photo-gallery img {
+    border-radius: 15px;
 }
 
 .slides > div:target {
@@ -331,6 +441,18 @@
     font-weight: 700;
 }
 
+.font-size-20 {
+    font-size: 1.25rem;
+}
+
+.font-size-15 {
+    font-size: 0.9375rem;
+}
+
+.font-size-13 {
+    font-size: 0.8125rem;
+}
+
 .text-left {
     text-align: left;
 }
@@ -351,8 +473,24 @@
     justify-content: center;
 }
 
+.align-center {
+    align-items: center;
+}
+
 .flex-column {
     flex-direction: column;
+}
+
+.color-black-1 {
+    color: var(--black-1);
+}
+
+.color-black-2 {
+    color: var(--black-2);
+}
+
+.color-blue-1 {
+    color: var(--blue-1);
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
