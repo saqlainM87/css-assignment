@@ -223,7 +223,7 @@
 .section-4 .photo-gallery-heading {
     margin: 6rem 0 3rem 0;
     color: var(--black-1);
-    font-size: 1.4375rem;
+    text-transform: uppercase;
 }
 
 .section-5 .address-block {
@@ -497,9 +497,20 @@
         height: 700px;
     }
 
+    .third-vector {
+        left: -210px;
+        top: 2280px;
+    }
+
+    .third-vector img {
+        width: 700px;
+        height: 600px;
+    }
+
     .section-1,
     .section-2,
-    .section-3 {
+    .section-3,
+    .section-4 {
         margin-top: 3rem;
         padding: 3rem 7rem;
     }
@@ -540,7 +551,7 @@
     .section-1 .worker-image img {
         width: 307px;
         height: 237px;
-        margin-left: 9.5rem;
+        margin-left: 4.5rem;
     }
 
     .section-2 {
@@ -566,6 +577,7 @@
     .section-2 .bullet-text {
         font-size: 1.25rem;
         margin-left: 1.875rem;
+        line-height: 28.9px;
     }
 
     .section-3 {
@@ -596,6 +608,20 @@
     .call-button.font-size-18.d-m-none button {
         padding: 0.5rem 2.85rem;
     }
+
+    .slides.placeholders > div {
+        width: 400px;
+        height: 300px;
+    }
+
+    .slider .photo-gallery > div {
+        width: 550px;
+        height: 384px;
+    }
+
+    .section-4 .photo-gallery-heading {
+        margin: 15rem 0 5rem 0;
+    }
 }
 
 /* Don't need button navigation */
@@ -612,6 +638,14 @@
 
 .font-500 {
     font-weight: 500;
+}
+
+.font-size-40 {
+    font-size: 2.5rem;
+}
+
+.font-size-23 {
+    font-size: 1.4375rem;
 }
 
 .font-size-20 {
