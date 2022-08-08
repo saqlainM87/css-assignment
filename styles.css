@@ -489,6 +489,7 @@
     .second-vector {
         right: -400px;
         top: 950px;
+        transform: rotate(-8deg);
     }
 
     .second-vector img {
@@ -496,9 +497,14 @@
         height: 700px;
     }
 
-    .section-1 {
+    .section-1,
+    .section-2,
+    .section-3 {
         margin-top: 3rem;
         padding: 3rem 7rem;
+    }
+
+    .section-1 {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
@@ -560,6 +566,35 @@
     .section-2 .bullet-text {
         font-size: 1.25rem;
         margin-left: 1.875rem;
+    }
+
+    .section-3 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .section-3 .service-offered {
+        flex-basis: 42%;
+        padding: 1.75rem 2.5rem 4.5rem 2.5rem;
+    }
+
+    .section-3 .service-offered:last-child {
+        flex-basis: 100%;
+    }
+
+    .section-3 .service-name {
+        font-size: 1.5625rem;
+        width: 25rem;
+        margin-bottom: 2rem;
+    }
+
+    .section-3 .service-info {
+        font-size: 1.25rem;
+    }
+
+    .call-button.font-size-18.d-m-none button {
+        padding: 0.5rem 2.85rem;
     }
 }
 
