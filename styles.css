@@ -58,7 +58,7 @@
 .second-vector {
     position: absolute;
     right: -175px;
-    top: 765px;
+    top: 785px;
     z-index: -100;
     transform: rotate(-5deg);
 }
@@ -131,6 +131,7 @@
     font-size: 1.25rem;
     width: 12.5rem;
     margin-top: 1.5rem;
+    text-transform: uppercase;
 }
 
 .forklift-image {
@@ -150,8 +151,9 @@
 .section-2 .title {
     color: var(--black-1);
     font-size: 1.25rem;
-    width: 12.5rem;
+    width: 15rem;
     margin-bottom: 2.25rem;
+    text-transform: uppercase;
 }
 
 .bullet-group {
@@ -484,7 +486,18 @@
         height: 52rem;
     }
 
+    .second-vector {
+        right: -400px;
+        top: 950px;
+    }
+
+    .second-vector img {
+        width: 650px;
+        height: 700px;
+    }
+
     .section-1 {
+        margin-top: 3rem;
         padding: 3rem 7rem;
         display: flex;
         justify-content: space-between;
@@ -493,7 +506,7 @@
 
     .section-1 .title {
         font-size: 2.5rem;
-        width: 18rem;
+        width: 25rem;
         margin-bottom: 1.25rem;
     }
 
@@ -522,6 +535,31 @@
         width: 307px;
         height: 237px;
         margin-left: 9.5rem;
+    }
+
+    .section-2 {
+        margin-top: 3rem;
+        padding: 3rem 7rem;
+    }
+
+    .section-2 .title {
+        font-size: 2.5rem;
+        width: 30rem;
+        margin-bottom: 3.5rem;
+    }
+
+    .section-2 .bullet-group {
+        width: 39.6875rem;
+    }
+
+    .section-2 .dot {
+        min-width: 27px;
+        height: 27px;
+    }
+
+    .section-2 .bullet-text {
+        font-size: 1.25rem;
+        margin-left: 1.875rem;
     }
 }
 
